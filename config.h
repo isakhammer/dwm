@@ -178,7 +178,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_i,		setlayout,	{.v = &layouts[7]} }, /* centeredfloatingmaster */
 	{ MODKEY,			XK_o,		incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_o,		incnmaster,     {.i = -1 } },
-	{ MODKEY,			XK_p,			spawn,		SHCMD("spotify") },
+	{ MODKEY|ShiftMask,		XK_p,		spawn,		SHCMD("spotify") },
 	/* { MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("mpc pause ; pauseallmpv") }, */
 	/* { MODKEY,			XK_bracketleft,		spawn,		SHCMD("mpc seek -10") }, */
 	/* { MODKEY|ShiftMask,		XK_bracketleft,		spawn,		SHCMD("mpc seek -60") }, */
@@ -225,10 +225,10 @@ static Key keys[] = {
 	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
 	{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("mpc repeat") },
 
-	{ MODKEY|AltMask,		XK_l,		focusmon,	{.i = -1 } },
-	{ MODKEY|AltMask|ShiftMask,	XK_l,		tagmon,		{.i = -1 } },
-	{ MODKEY|AltMask,	        XK_h,		focusmon,	{.i = +1 } },
-	{ MODKEY|AltMask|ShiftMask,	XK_h,		tagmon,		{.i = +1 } },
+	{ MODKEY|AltMask,		XK_j,		focusmon,	{.i = -1 } },
+	{ MODKEY|AltMask|ShiftMask,	XK_j,		tagmon,		{.i = -1 } },
+	{ MODKEY|AltMask,	        XK_k,		focusmon,	{.i = +1 } },
+	{ MODKEY|AltMask|ShiftMask,	XK_k,		tagmon,		{.i = +1 } },
 
 	{ MODKEY,			XK_Left,	focusmon,	{.i = -1 } },
 	{ MODKEY|ShiftMask,		XK_Left,	tagmon,		{.i = -1 } },
@@ -243,7 +243,7 @@ static Key keys[] = {
 
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom /usr/local/share/dwm/larbs.mom -Tpdf | zathura -") },
 	{ MODKEY,			XK_F2,		spawn,		SHCMD("tutorialvids") },
-	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
+	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("displayselect") },
 	{ MODKEY,			XK_F4,		spawn,		SHCMD(TERMINAL " -e pulsemixer; kill -44 $(pidof dwmblocks)") },
 	/* { MODKEY,			XK_F5,		xrdb,		{.v = NULL } }, */
 	{ MODKEY,			XK_F6,		spawn,		SHCMD("torwrap") },
